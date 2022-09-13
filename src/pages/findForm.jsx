@@ -6,12 +6,15 @@ import InfoForm from './../components/ItemInfoSec/index';
 
 
 const FindForm = () => {
+
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle  = () => {
    setIsOpen(!isOpen)
   }
+
   return (
+    
     
     <div>
        <SideBar
@@ -20,7 +23,8 @@ const FindForm = () => {
     <Navbar 
     toggle = {toggle}
     />
-<InfoForm {...FormObj2} />
+<InfoForm {...FormObj2}
+ />
 </div>
   )
 }

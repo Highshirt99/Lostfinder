@@ -17,7 +17,7 @@ function App() {
         <Route path="/signin" component={SigninPage} />
         <Route path="/signup" component={Signup} />
         <Route path = "/regainPassword" component = {PasswordRegainPage}/>
-        <Route path="/find" component={FindForm} />
+        <Route path="/find" component= {FindForm} />
         <Route path="/return" component={ReturnForm} />
         <Route path = "/dashboard" component = {Dashboard}/>
       </Switch>

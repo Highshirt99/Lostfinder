@@ -57,28 +57,28 @@ export const Label = styled.label`
 
 `
 export const SmallText = styled.small`
-  font-weight: light
+  font-weight: light;
 `
 export const Input = styled.input`
     display: block;
     margin-top: 18px;
     text-align: left;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
-    border: transparent;
+    border: 1px solid grey;
     border-radius: 6px;
     background-color: lightgrey;
     outline: none;
     
        
     @media screen and (max-width: 768px){
-     padding: 6px;
+     padding: 16px;
     }
 `
 export const Textarea = styled.textarea`
     width: 100%;
     margin-top: 25px;  
-    border: 1px solid #010606;
+    border: 1px solid grey;
     border-radius: 6px;
 ` 
 

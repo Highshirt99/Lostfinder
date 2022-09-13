@@ -34,13 +34,17 @@ const InfoForm = ({
     type5,
     buttonType,
     buttonLabel
+
 }) => {
  
+    
+   
+
   return (
 <InfoContainer>
 
     <FormWrap>
-        <Form  action = "#">
+        <Form action = "#"  >
         <Heading>
             {heading}
         </Heading>
@@ -50,7 +54,7 @@ const InfoForm = ({
         <InfoP2>
             {infoP2}
         </InfoP2>
-        <Label hlFor = {for1}>
+        <Label htmlFor = {for1}>
             {label1}
         </Label>
         <Input name = "nameOfItem" type ={type1} placeholder = {placeHolder1}/>
@@ -73,7 +77,7 @@ const InfoForm = ({
         </Label >
         <Input style={{border: "none"}} type ={type5}/>
  
-        <ButtonEl to ="" type = {buttonType}>{buttonLabel}</ButtonEl>
+        <ButtonEl  to ="" type = {buttonType}>{buttonLabel}</ButtonEl>
 
         </Form>
     </FormWrap>

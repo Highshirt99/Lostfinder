@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/navBar';
 import SideBar from '../components/sideBar';
-import Signin from '../components/Form/SignIn.';
+import Signin from '../components/Form/SignIn';
 import { formObjOne } from '../components/infoSection/data';
 
 

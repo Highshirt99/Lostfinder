@@ -28,7 +28,7 @@ span}
    <Container>
     <FormWrap>
   
-        <Form action = "#">
+        <Form action = "#" >
         <FormH1>{formH1}</FormH1>
         <FormLabel htmlFor = {for1} >{formLabel1}</FormLabel>
         <FormInput name = "username" type = {formType1} required/>
