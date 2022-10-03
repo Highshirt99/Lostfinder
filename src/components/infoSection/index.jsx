@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button } from '../heroSection/buttonEls'
 import { useHistory } from 'react-router-dom';
-import { 
+import FoundItems from './../detailsSec/foundItems';
+import LostItems from './../detailsSec/lostItems';
 
+import {
     InfoContainer,
     InfoWrapper,
      InfoRow,
@@ -25,7 +27,6 @@ const InfoSection = ({
       buttonLabel,
       image,
         alt,
-    primary,
     link,
     path
  
@@ -39,6 +40,7 @@ const InfoSection = ({
   
      
   return (
+
 <InfoContainer id={id}>
     <InfoWrapper>
         <InfoRow imgStart = {imgStart}>
@@ -56,7 +58,6 @@ const InfoSection = ({
                     duration = {500}
                     spy ={true}
                     offset = {-80}
-                    primary = {primary ? 1 : 0}
                >{buttonLabel}</Button>
                 </BtnWrap>
             </TextWrapper>
@@ -69,8 +70,8 @@ const InfoSection = ({
             </Column2>
         </InfoRow>
     </InfoWrapper>
-
 </InfoContainer>
+
   )
 }
 

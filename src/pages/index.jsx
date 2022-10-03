@@ -6,6 +6,8 @@ import InfoSection from '../components/infoSection'
 import Services from '../components/servicesSection'
 import { homeObjFour, homeObjOne} from '../components/infoSection/data'
 import Footer from '../components/Footer'
+import LostItems from '../components/detailsSec/lostItems'
+import FoundItems from '../components/detailsSec/foundItems'
 
 
 
@@ -30,8 +32,13 @@ const toggle  = () => {
     <InfoSection {...homeObjOne} />
      <Services />
      <InfoSection {...homeObjFour}/>
+     
+     <LostItems />
+    <FoundItems />
     
     <Footer />
+
+
 
     </>
   )

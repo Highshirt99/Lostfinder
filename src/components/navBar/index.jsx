@@ -2,7 +2,7 @@ import React , {useState, useEffect} from 'react'
 import { useHistory } from 'react-router-dom';
 import {FaBars} from "react-icons/fa"
 import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll, ScrollLink} from 'react-scroll';
 
 import {Nav,
      NavbarContainer, 
@@ -35,9 +35,8 @@ const Navbar = ({toggle}) => {
         scroll.scrollToTop();
     }
         let history = useHistory()
-    function handleClick(event){
-        event.preventDefault()
-        history.push("/signup", "scrollNav")
+    function handleClick(path){
+        history.push(path, "scrollNav")
         
 }
   return (
@@ -69,7 +68,8 @@ const Navbar = ({toggle}) => {
                                duration = {500}
                                spy = {true}
                                exact  = "true"
-                               offset = {-80}>About</NavLinks>
+                               offset = {-80}
+                               >About</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to = "services"
@@ -78,11 +78,12 @@ const Navbar = ({toggle}) => {
                                duration = {500}
                                spy = {true}
                                exact  = "true"
-                               offset = {-80}>Services</NavLinks>
+                               offset = {-80}
+                               >Services</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks 
-                        onClick={handleClick }
+                        // onClick={ () => handleClick("/signup") }
                         style={{textDecoration: "none",
                         color:"#fff"}} 
                         to = "signup"
